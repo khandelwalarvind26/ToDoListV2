@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 let today = new Date();
-let tasks = ["Cook Food", "Eat Food"];
+let tasks = ["Cook Food", "Eat Food", "Wash Utensils"];
 app.get('/',function(req,res) {
     let options = {weekday:"long", month:"long",day:"numeric"};
     let day = today.toLocaleDateString("en-US",options);

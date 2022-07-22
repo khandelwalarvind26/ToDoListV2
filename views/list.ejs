@@ -16,12 +16,16 @@
     <div class = "card">
         
             <% for(let i = 0; i < task.length; i++) { %>
-                <p class="list-item"><%=task[i] %></p>
+                <div class = "box">
+                    <input type = "checkbox" class = "checkbox" id = "a">
+                    <p class = "element"><%=task[i] %></p>
+                </div>
             <% } %>
         <form action = "/" method = "post">
-            <input type = "text" placeholder="New Task" name = "newtask">
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+            <input type = "text" placeholder="New Task" name = "newtask" autocomplete="off">
+            <button class="button button5" type="submit">+</button>
         </form>
     </div>
+    <p class="footer-text">© github.com/khandelwalarvind26</p>
 </body>
 </html>
