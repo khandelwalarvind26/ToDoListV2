@@ -1,0 +1,40 @@
+h1 {
+    text-align: center;
+    background-color: #9a6ddc;
+    color:white;
+    margin-top: 40px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* html  */
+
+body {
+    background-color: #e3e4fb;
+    background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+    min-height: 1000px;
+}
+
+.card {
+    align-items: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 5px;
+    border-width: 0px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+}
+
+.list-item {
+    border-bottom: 1px solid;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left: 31%;
+    padding-right: 31%;
+    font-size: 150%;
+}
