@@ -3,8 +3,8 @@ h1 {
     background-color: #9a6ddc;
     color:white;
     margin-top: 40px;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 32%;
+    margin-right: 32%;
     margin-bottom: 50px;
     padding-bottom: 10px;
     padding-top: 5px;
@@ -23,8 +23,8 @@ body {
 
 .card {
     align-items: center;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 32%;
+    margin-right: 32%;
     border-radius: 5px;
     border-width: 0px;
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
@@ -45,7 +45,7 @@ body {
     border-bottom: 0;
 }
 
-.checkbox{
+.checkbox {
     display: inline-block;
     /* position: absolute; */
     margin: 30px;
@@ -53,8 +53,7 @@ body {
 
 p {
     margin: 0;
-    padding: 20px;
-    font-size: 20px;
+    /* padding: 20px; */
     font-weight: 200;
     color: #00204a;
 }
@@ -70,7 +69,7 @@ input[type="text"] {
     background: transparent;
     font-size: 20px;
     font-weight: 200;
-    width: 360px;
+    width: 430px;
 }
 
 .button {
@@ -87,7 +86,7 @@ input[type="text"] {
 
 .button5 {border-radius: 60%;}
 
-form {
+form.in {
     width: 100%;
     text-align: center;
     margin-left:10px;

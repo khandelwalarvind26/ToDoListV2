@@ -3,12 +3,14 @@
     <div class = "card">
         
             <% for(let i = 0; i < task.length; i++) { %>
-                <div class = "box">
-                    <input type = "checkbox" class = "checkbox" id = "a">
-                    <p class = "element"><%=task[i] %></p>
-                </div>
+                <form action = "/delete" class = "box" method ="post">
+                    <div class = "box">
+                        <input type = "checkbox" class = "checkbox" name = "checked" onchange="this.form.submit()" value = "<%=task[i]._id  %>" id = "a">
+                        <p class = "element"><%=task[i].name %></p>
+                    </div>
+                </form>
             <% } %>
-        <form <%if(title == "Work List") {%>action = "/work"<%} else {%> action = "/"<%}%> method = "post">
+        <form class = "in" <%if(title == "Work List") {%>action = "/work"<%} else {%> action = "/"<%}%> method = "post">
             <input type = "text" placeholder="New Task" name = "newtask" autocomplete="off">
             <button class="button button5" type="submit">+</button>
         </form>
