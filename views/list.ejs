@@ -1,18 +1,18 @@
-<%- include("header") -%>
+<%- include("partials/header") -%>
     <h1><%=title%></h1>
     <div class = "card">
         
             <% for(let i = 0; i < task.length; i++) { %>
-                <form action = "/delete" class = "box" method ="post">
+                <form <%if(cond === 1) {%> action="/<%=title%>/delete" <%}else{%> action = "/deleteMain" <%}%> class = "box" method ="post">
                     <div class = "box">
-                        <input type = "checkbox" class = "checkbox" name = "checked" onchange="this.form.submit()" value = "<%=task[i]._id  %>" id = "a">
+                        <input type = "checkbox" class = "checkbox" name = "checked" onchange="this.form.submit()" value = "<%=task[i]._id%>" id = "a">
                         <p class = "element"><%=task[i].name %></p>
                     </div>
                 </form>
             <% } %>
-        <form class = "in" <%if(title == "Work List") {%>action = "/work"<%} else {%> action = "/"<%}%> method = "post">
+        <form class = "in" <%if(cond ===1) {%>action = "/<%=title%>"<%} else {%> action = "/"<%}%> method = "post">
             <input type = "text" placeholder="New Task" name = "newtask" autocomplete="off">
             <button class="button button5" type="submit">+</button>
         </form>
     </div>
-<%- include("footer") -%>
+<%- include("partials/footer") -%>
